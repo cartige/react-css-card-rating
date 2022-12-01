@@ -1,23 +1,15 @@
 import "./card.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
 export default function Card() {
   const stars = Array(5).fill(0);
   const [currVal, setCurrVal] = useState(0);
   const [hoverVal, setHoverVal] = useState(undefined);
-  const [rating, setRating] = useState(0);
 
-  const handleClick = (value) => {
-    setCurrVal(value);
-    setRating(value);
-  };
+  const handleClick = (value) => setCurrVal(value);
   const handleMouseOver = (value) => setHoverVal(value);
   const handleMouseLeave = () => setHoverVal(undefined);
-
-  useEffect(() => {
-    console.log(rating);
-  }, [rating]);
 
   return (
     <>
