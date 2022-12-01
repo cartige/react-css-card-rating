@@ -1,3 +1,5 @@
+J'ai choisi cette techno(scss), car je trouve ça beaucoup plus clair, plus pratique à utiliser, et plus logique.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
