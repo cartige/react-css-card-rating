@@ -1,0 +1,79 @@
+$sub-color: rgb(121, 121, 121);
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-shadow: 3px 5px 5px rgb(214, 214, 214);
+  margin: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(245, 245, 245);
+
+  .card-header {
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+    border-bottom: 1px solid white;
+
+    img {
+      width: 125px;
+      height: 125px;
+      border-top-left-radius: 0.5rem;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      width: 300px;
+
+      .artist {
+        margin: 0.7rem;
+        margin-top: 1rem;
+        font-weight: normal;
+      }
+
+      .album-title {
+        margin: 0 0 0 0.7rem;
+        color: $sub-color;
+      }
+
+      .year {
+        margin: 0 0 0 0.7rem;
+        color: $sub-color;
+      }
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+
+    .rating-title {
+      margin: 1.6rem 1.6rem;
+      font-weight: normal;
+      color: rgb(130, 130, 130);
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+
+      .stars {
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .active-star {
+        color: gold;
+        padding: 0.5rem;
+      }
+
+      .inactive-star {
+        color: grey;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
